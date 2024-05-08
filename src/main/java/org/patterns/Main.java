@@ -1,7 +1,11 @@
 package org.patterns;
 
+import org.patterns.behaviour.iterator.MyList;
 import org.patterns.behaviour.observer.DataConsumer;
 import org.patterns.behaviour.observer.DataProvider;
+import org.patterns.behaviour.templateMethod.AnimalTemplate;
+import org.patterns.behaviour.templateMethod.MoneyTemplate;
+import org.patterns.behaviour.templateMethod.Template;
 
 public class Main {
     public static void main(String[] args) {
@@ -102,6 +106,15 @@ public class Main {
 //        provider.setData("data");
 //
 //        System.out.println("Стало - " + consumer.getData());
+
+        /**
+         * Pattern Template Method
+         */
+
+//        Template money = new MoneyTemplate();
+//        Template animal = new AnimalTemplate();
+//        money.show();
+//        animal.show();
 
 
     }
