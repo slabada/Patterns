@@ -19,6 +19,7 @@ public class ProxyDailyReport implements Report {
         if(!cache.containsKey(localDate)){
             String report = dailyReport.prepareReport(localDate);
             cache.put(localDate, report);
+            return report;
         }
         return cache.get(localDate);
     }
