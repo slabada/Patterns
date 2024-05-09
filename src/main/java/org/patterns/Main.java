@@ -6,6 +6,11 @@ import org.patterns.structural.composite.BMW;
 import org.patterns.structural.composite.Car;
 import org.patterns.structural.composite.Composite;
 import org.patterns.structural.decorator.*;
+import org.patterns.structural.proxy.DailyReport;
+import org.patterns.structural.proxy.ProxyDailyReport;
+import org.patterns.structural.proxy.Report;
+
+import java.time.LocalDate;
 
 public class Main {
     public static void main(String[] args) {
@@ -35,7 +40,6 @@ public class Main {
 //        factory.createAudi().move();
 //        factory.createBMW().move();
 
-/**####################################################################################*/
 
         /**
          * Pattern Prototype
@@ -160,5 +164,14 @@ public class Main {
 //        composite1.add(composite0);
 //
 //        composite0.move();
+
+        /**
+         * Pattern Proxy
+         */
+
+//        Report dailyReport = new DailyReport();
+//        Report proxy = new ProxyDailyReport(dailyReport);
+//        String report = proxy.prepareReport(LocalDate.now());
+//        System.out.println(report);
     }
 }
