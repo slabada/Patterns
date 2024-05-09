@@ -1,11 +1,11 @@
 package org.patterns;
 
-import org.patterns.behaviour.iterator.MyList;
-import org.patterns.behaviour.observer.DataConsumer;
-import org.patterns.behaviour.observer.DataProvider;
-import org.patterns.behaviour.templateMethod.AnimalTemplate;
-import org.patterns.behaviour.templateMethod.MoneyTemplate;
-import org.patterns.behaviour.templateMethod.Template;
+import org.patterns.structural.bridge.*;
+import org.patterns.structural.composite.Audi;
+import org.patterns.structural.composite.BMW;
+import org.patterns.structural.composite.Car;
+import org.patterns.structural.composite.Composite;
+import org.patterns.structural.decorator.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -116,6 +116,49 @@ public class Main {
 //        money.show();
 //        animal.show();
 
+        /**
+         * Pattern Adapter
+         */
 
+//        Radio radio = new Radio();
+//        UsaSocket usaSocket = new UsaSocketImpl();
+//        EuroSocket euroSocket = new EuroSocketImpl();
+//        EuroSocket socketAdapter = new SocketAdapter(usaSocket);
+//        radio.listenerMusic(socketAdapter);
+
+        /**
+         * Pattern Bridge
+         */
+
+//        Vehicle vehicle = new Car(new Audi());
+//        vehicle.move();
+//        Vehicle vehicle1 = new Truck(new BMW());
+//        vehicle1.move();
+
+        /**
+         * Pattern Decorator
+         */
+
+//        Shape circle = new Circle();
+//        Decorator decorator = new Red(circle);
+//        decorator.draw();
+//        Decorator decorator1 = new Blue(circle);
+//        decorator1.draw();
+
+        /**
+         * Pattern Composite
+         */
+
+//        Car audi = new Audi();
+//        Car BMW = new BMW();
+//
+//        Composite composite0 = new Composite();
+//        composite0.add(audi);
+//        composite0.add(BMW);
+//
+//        Composite composite1 = new Composite();
+//        composite1.add(composite0);
+//
+//        composite0.move();
     }
 }
