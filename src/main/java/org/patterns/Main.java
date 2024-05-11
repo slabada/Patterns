@@ -1,5 +1,6 @@
 package org.patterns;
 
+import org.patterns.behaviour.commanda.*;
 import org.patterns.structural.bridge.*;
 import org.patterns.structural.composite.Audi;
 import org.patterns.structural.composite.BMW;
@@ -173,5 +174,21 @@ public class Main {
 //        Report proxy = new ProxyDailyReport(dailyReport);
 //        String report = proxy.prepareReport(LocalDate.now());
 //        System.out.println(report);
+
+        /**
+         * Pattern Command
+         */
+
+//        Computer computer = new Computer();
+//
+//        User user = new User(
+//                new RestartCommand(computer),
+//                new StartCommand(computer),
+//                new StopCommand(computer)
+//        );
+//
+//        user.restartComputer();
+//        user.stopComputer();
+//        user.startComputer();
     }
 }
