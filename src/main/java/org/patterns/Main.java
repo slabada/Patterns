@@ -1,17 +1,9 @@
 package org.patterns;
 
-import org.patterns.behaviour.commanda.*;
-import org.patterns.structural.bridge.*;
-import org.patterns.structural.composite.Audi;
-import org.patterns.structural.composite.BMW;
-import org.patterns.structural.composite.Car;
-import org.patterns.structural.composite.Composite;
-import org.patterns.structural.decorator.*;
-import org.patterns.structural.proxy.DailyReport;
-import org.patterns.structural.proxy.ProxyDailyReport;
-import org.patterns.structural.proxy.Report;
-
-import java.time.LocalDate;
+import org.patterns.behaviour.state.Context;
+import org.patterns.behaviour.state.GreenState;
+import org.patterns.behaviour.state.RedState;
+import org.patterns.behaviour.state.YellowState;
 
 public class Main {
     public static void main(String[] args) {
@@ -97,6 +89,17 @@ public class Main {
 //        Context context1 = new Context(new SMS());
 //        context0.getNotification();
 //        context1.getNotification();
+
+        /**
+         * Pattern State
+         */
+
+//        Context context = new Context();
+//        context.setState(new GreenState());
+//        context.transition(new GreenState(), new YellowState());
+//        context.nextState();
+//        context.transition(new GreenState());
+
 
         /**
          * Pattern Observer
